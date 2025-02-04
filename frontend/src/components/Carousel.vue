@@ -7,7 +7,8 @@
                 <div class="carousel__text">
                     <h2 class="carousel__text--color1">Innovación TI</h2>
                     <h2 class="carousel__text--color2">Para el éxito de tu negocio</h2>
-                    <p class="carousel__text--color3">Desarrollo tecnológico de vanguardia y estrategias digitales para impulsar tu crecimiento en el mundo online.</p>
+                    <p class="carousel__text--color3">Desarrollo tecnológico de vanguardia y estrategias digitales para
+                        impulsar tu crecimiento en el mundo online.</p>
                 </div>
 
             </div>
@@ -16,7 +17,8 @@
                 <div class="carousel__text">
                     <h2 class="carousel__text--color1">Desarrollo Web a la Medida</h2>
                     <h2 class="carousel__text--color2">Tu visión, nuestro código.</h2>
-                    <p class="carousel__text--color3">Construimos sitios web modernos, rápidos y adaptados a tus necesidades para que tu negocio destaque en línea.</p>
+                    <p class="carousel__text--color3">Construimos sitios web modernos, rápidos y adaptados a tus
+                        necesidades para que tu negocio destaque en línea.</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -24,7 +26,8 @@
                 <div class="carousel__text">
                     <h2 class="carousel__text--color1">Automatización y Optimización</h2>
                     <h2 class="carousel__text--color2">Menos esfuerzo, más resultados.</h2>
-                    <p class="carousel__text--color3">Optimizamos tus procesos con soluciones tecnológicas innovadoras, reduciendo costos y mejorando la eficiencia.</p>
+                    <p class="carousel__text--color3">Optimizamos tus procesos con soluciones tecnológicas innovadoras,
+                        reduciendo costos y mejorando la eficiencia.</p>
                 </div>
             </div>
         </div>
@@ -42,7 +45,10 @@
 </template>
 
 <style scoped>
-
+#carouselExampleAutoplaying {
+    position: relative;
+    z-index: 1;
+}
 
 img {
     width: 100vw;

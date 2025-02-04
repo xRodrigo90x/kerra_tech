@@ -42,11 +42,7 @@
 </template>
 
 <style scoped>
-#carouselExample {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
+
 
 img {
     width: 100vw;

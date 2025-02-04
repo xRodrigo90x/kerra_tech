@@ -5,9 +5,10 @@
 
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#"><img id="logo" src="../../public/Sin título-4.png" alt="logo"><img
-          src="../../public/Sin título-3.png" alt="textologo" width="30" height="24"
-          class="d-inline-block align-text-top"></a>
+      <a class="navbar-brand" href="#">
+        <img src="../../public/icono.png" alt="icono KerraTech" width="40" height="34" id="logo">
+        Kerra.Tech()
+      </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,31 +32,48 @@
 <style scoped>
 nav {
   height: 10vh;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  /* background-color: #284390; */
+  /* background-color: #082153; */
   font-family: Roboto Condensed, serif;
   font-weight: 600;
   width: 100%;
 }
 
-img {
-  width: 120px;
-  height: 50px;
+
+
+.navbar-brand {
+  font-family: "Audiowide", serif;
+  background: rgb(1, 87, 189);
+  background: linear-gradient(90deg, rgba(1, 87, 189, 1) 51%, rgba(95, 159, 255, 1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #logo {
   width: 50px;
   height: 40px;
-  animation: rotacion 10s linear infinite;
+  animation: agrandar 1.5s alternate-reverse infinite, girar alternate-reverse infinite 0.5;
 
 }
 
-@keyframes rotacion {
+#logo {
+  width: 50px;
+  height: 40px;
+  animation: agrandarYgirar 1.8s alternate-reverse infinite;
+}
+
+@keyframes agrandarYgirar {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1.11) rotate(20deg);
+  }
+  
+  50% {
+    transform: scale(1.11) rotate(-20deg);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: scale(1) rotate(0deg);
   }
 }
 </style>

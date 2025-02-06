@@ -1,7 +1,7 @@
 <script setup>
-import web from '@/assets/img/static-assets.svg'
-import mobile from '@/assets/img/develop-app.svg'
-import chatbot from '@/assets/img/chat-bot.svg'
+import web from '../../public/icon/static-assets.svg'
+import mobile from '../../public/icon/develop-app.svg'
+import chatbot from '../../public/icon/chat-bot.svg'
 
 </script>
 <template>

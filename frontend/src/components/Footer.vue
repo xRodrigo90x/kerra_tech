@@ -5,6 +5,6 @@
 </template>
 <style scoped>
 footer{
-    background-color: red;
+    background-color: white;
 }
 </style>

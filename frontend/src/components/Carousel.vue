@@ -1,5 +1,4 @@
 <template>
-    <!--poner carousel en data-bs-ride-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
         <div class="carousel-inner">
             <div class="carousel-item active">

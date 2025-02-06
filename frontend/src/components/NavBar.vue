@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router';
 
 <template>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <RouterLink to="/" class="navbar-brand" href="#">
         <img src="../../public/logo-kerratech.png" alt="icono KerraTech" width="36" height="30" id="logo">
@@ -38,6 +38,7 @@ import { RouterLink } from 'vue-router';
 
 <style scoped>
 nav {
+  background-color: white;
   height: 10vh;
   font-family: Roboto Condensed, serif;
   font-weight: 600;

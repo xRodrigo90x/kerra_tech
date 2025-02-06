@@ -7,8 +7,9 @@ import Card from '@/components/Card.vue';
 
     <Carousel />
     <main>
-
-        <h1 class="text-center pt-5">Algunos servicios</h1>
+        <div>
+            <h1 class="text-center pt-5">Algunos servicios</h1>
+        </div>
         
         <section>
             <Card />
@@ -22,6 +23,10 @@ import Card from '@/components/Card.vue';
 <style scoped>
 main {
     background-color: #0f1629;
+    
+}
+section{
+    padding: 5vh;
 }
 
 h1 {

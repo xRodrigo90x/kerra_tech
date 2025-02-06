@@ -1,14 +1,15 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
 
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../../public/icono.png" alt="icono KerraTech" width="40" height="34" id="logo">
-        Kerra.Tech()
-      </a>
+      <RouterLink to="/" class="navbar-brand" href="#">
+        <img src="../../public/logo-kerratech.png" alt="icono KerraTech" width="36" height="30" id="logo">
+        KerraTech
+      </RouterLink>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,16 +18,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+            <RouterLink to="/" class="nav-link" aria-current="page">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Link</a>
+            <a class="nav-link" href="#">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">caca</a>
+            <a class="nav-link" href="#">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">asdf</a>
+            <a class="nav-link" href="#">¿Quienes somos?</a>
           </li>
         </ul>
       </div>
@@ -42,9 +43,20 @@ nav {
   font-weight: 600;
   width: 100%;
 }
-.collapse{
+
+.collapse {
   z-index: 10;
 
+}
+
+.collapse.show .navbar-nav .nav-item {
+  background-color: #0f1629;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 5px;
+}
+.collapse.show .navbar-nav .nav-item .nav-link {
+  color: white !important;
 }
 .navbar-brand {
   font-family: "Audiowide", serif;

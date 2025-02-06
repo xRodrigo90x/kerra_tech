@@ -27,7 +27,7 @@ import { RouterLink } from 'vue-router';
             <a class="nav-link" href="#">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">¿Quienes somos?</a>
+            <RouterLink to="/quienesSomos" class="nav-link" href="#">¿Quienes somos?</RouterLink>
           </li>
         </ul>
       </div>

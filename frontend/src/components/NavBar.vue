@@ -1,12 +1,28 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const opacidad = ref(false);
+
+const actualizarOpacidad = () => {
+  opacidad.value = window.scrollY > 60;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', actualizarOpacidad);
+});
+onUnmounted(() => {
+  window.removeEventListener('scroll', actualizarOpacidad);
+});
+
 </script>
 
 <template>
 
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg" :class="{ opacity: opacidad }" @mouseover="opacidad = false"
+  @mouseleave="opacidad = true">
     <div class="container">
-      <RouterLink to="/" class="navbar-brand" href="#">
+      <RouterLink to="/" class="navbar-brand">
         <img src="../../public/logo-kerratech.png" alt="icono KerraTech" width="36" height="30" id="logo">
         KerraTech
       </RouterLink>
@@ -43,6 +59,10 @@ nav {
   font-family: Roboto Condensed, serif;
   font-weight: 600;
   width: 100%;
+  transition: .5s ease-in-out;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .collapse {
@@ -50,15 +70,22 @@ nav {
 
 }
 
+.opacity {
+  background-color: rgba(255, 255, 255, 0.7); 
+  backdrop-filter: blur(2px); 
+}
+
 .collapse.show .navbar-nav .nav-item {
-  background-color: #0f1629;
+  background-color: #000000b5;
   border-radius: 5px;
   margin: 5px 0;
   padding: 5px;
 }
+
 .collapse.show .navbar-nav .nav-item .nav-link {
   color: white !important;
 }
+
 .navbar-brand {
   font-family: "Audiowide", serif;
   background: rgb(1, 87, 189);

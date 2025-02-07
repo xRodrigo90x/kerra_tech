@@ -1,6 +1,7 @@
 <template>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
         <div class="carousel-inner">
+
             <div class="carousel-item active">
                 <img src="../../public/carrusel1.webp" class="d-block" alt="gente hablando">
                 <div class="carousel__text">
@@ -11,6 +12,7 @@
                 </div>
 
             </div>
+
             <div class="carousel-item">
                 <img src="../../public/carrusel2.webp" class="d-block" alt="gente trabajando">
                 <div class="carousel__text">
@@ -20,6 +22,7 @@
                         necesidades para que tu negocio destaque en línea.</p>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <img src="../../public/carrusel3.png" class="d-block " alt="mano con celular">
                 <div class="carousel__text">
@@ -29,6 +32,7 @@
                         reduciendo costos y mejorando la eficiencia.</p>
                 </div>
             </div>
+            
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev">

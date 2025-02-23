@@ -45,6 +45,9 @@ onUnmounted(() => {
           <li class="nav-item">
             <RouterLink to="/quienesSomos" class="nav-link" href="#">¿Quienes somos?</RouterLink>
           </li>
+          <li class="nav-item">
+            <RouterLink to="/cotizacion" class="nav-link" aria-label="Cotización">Cotiza</RouterLink>
+          </li>
         </ul>
       </div>
     </div>
